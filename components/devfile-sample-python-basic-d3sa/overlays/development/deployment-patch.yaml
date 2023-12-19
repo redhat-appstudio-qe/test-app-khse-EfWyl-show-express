@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-d3sa
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/build-e2e-yjqx-tenant/test-app-khse/devfile-sample-python-basic-d3sa@sha256:b899267ac77a3828d35e1994dd6bb832a559b6b9c5aa57804869b7081a6a3820
+        name: my-python
+        resources: {}
+status: {}
